@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="ng_sb_element_horizontal_margin">15dp</dimen>
+    <dimen name="ng_sb_element_vertical_margin">5dp</dimen>
+    <dimen name="ng_sb_element_padding">5dp</dimen>
+
+    <dimen name="ng_background_design_top_padding">125dp</dimen>
+    <dimen name="ng_background_design_middle_padding">125dp</dimen>
+    <dimen name="ng_background_design_bottom_padding">100dp</dimen>
+    <dimen name="ng_select_board_horizontal_padding">20dp</dimen>
+    <dimen name="ng_select_board_vertical_padding">20dp</dimen>
+    <dimen name="ng_num1_text_size">50sp</dimen>
+    <dimen name="ng_player1_mark_padding_bottom">50dp</dimen>
+    <dimen name="ng_player1_mark_horizontal_padding">25dp</dimen>
+    <dimen name="ng_player1_mark_padding_top">10dp</dimen>
+    <dimen name="ng_player1_mark_text_size">18sp</dimen>
+    <dimen name="ng_player1_left_and_player_right_margin">75dp</dimen>
+    <dimen name="ng_player1_and_player_top_margin">35dp</dimen>
+    <dimen name="ng_ps_text_size">30sp</dimen>
+    <dimen name="ng_time_vertical_padding">2dp</dimen>
+    <dimen name="ng_time_horizontal_padding">125dp</dimen>
+    <dimen name="ng_time_text_size">36sp</dimen>
+    <dimen name="ng_btn_p1_and_p2_margin_bottom">10dp</dimen>
+    <dimen name="ng_btn_p1_left_and_p2_right_margin">15dp</dimen>
+    <dimen name="ng_btn_p1_and_p2_horizontal_padding">45dp</dimen>
+    <dimen name="ng_btn_p1_and_p2_vertical_padding">70dp</dimen>
+    <dimen name="ng_ply1_and_ply2_round_size">50dp</dimen>
+    <dimen name="ng_ui_place">50dp</dimen>
+    <dimen name="ng_ui_title_btn_margin">10dp</dimen>
+    <dimen name="ng_ui_title_text_size">40sp</dimen>
+    <dimen name="ng_ui_gamestart_btn_horizontal_padding">10sp</dimen>
+    <dimen name="ng_ui_gamestart_btn_vertical_padding">75sp</dimen>
+    <dimen name="ng_ui_size_horizontal_padding">120dp</dimen>
+    <dimen name="ng_ui_size_vertical_padding">30dp</dimen>
+
+
+
+<!--       dimen for Memory Challange         -->
+    <dimen name="mc_circle_btn_size">58dip</dimen>
+
+    <dimen name="mc_circle_button_margin">6dip</dimen>
+
+    <dimen name="mc_record_ml_size">20sp</dimen>
+    <dimen name="mc_record_text_size">15sp</dimen>
+
+    <dimen name="mc_record_view_horizontal_padding">30dp</dimen>
+    <dimen name="mc_record_view_vertical_padding">10dp</dimen>
+    <dimen name="mc_record_view_vertical_margin">30dp</dimen>
+    <dimen name="mc_record_view_horizontal_margin">175dp</dimen>
+
+    <dimen name="mc_ply_btn_place_top_margin">30dp</dimen>
+    <dimen name="mc_ply_btn_place_vertical_padding">5dp</dimen>
+    <dimen name="mc_ply_btn_place_horizontal_padding">15dp</dimen>
+
+    <dimen name="mc_ply_score_horizontal_size">173dp</dimen>
+    <dimen name="mc_ply_score_vertical_size">32dp</dimen>
+
+    <dimen name="mc_time_horizontal_size">170dp</dimen>
+    <dimen name="mc_time_vertical_size">33dp</dimen>
+
+    <dimen name="mc_time_text_size">25sp</dimen>
+    <dimen name="mc_ply_score_text_size">20sp</dimen>
+
+    <dimen name="mc_rounds_view_horizontal_padding">30dp</dimen>
+    <dimen name="mc_rounds_view_vertical_padding">5dp</dimen>
+
+    <dimen name="mc_ui_place_horizontal_padding">50dp</dimen>
+    <dimen name="mc_ui_element_margin">10dp</dimen>
+
+    <dimen name="mc_ui_gametitle_winner_text_size">40sp</dimen>
+
+    <dimen name="mc_ui_gs_btn_vertical_padding">10sp</dimen>
+    <dimen name="mc_ui_gs_btn_horizontal_padding">75sp</dimen>
+
+    <dimen name="mc_ui_pt_text_size">225sp</dimen>
+
+</resources>

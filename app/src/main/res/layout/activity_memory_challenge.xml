@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/mc_color_main_background"
+    tools:context="com.example.student.assignment1.MemoryChallenge">
+
+    <GridLayout
+        android:id="@+id/ply1_btn_place"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/mc_ply_btn_place_top_margin"
+        android:background="@color/mc_ply1_btn_place_background"
+        android:paddingBottom="@dimen/mc_ply_btn_place_vertical_padding"
+        android:paddingLeft="@dimen/mc_ply_btn_place_horizontal_padding"
+        android:paddingRight="@dimen/mc_ply_btn_place_horizontal_padding"
+        android:paddingTop="@dimen/mc_ply_btn_place_vertical_padding">
+
+        <ImageButton
+            android:id="@+id/ply1_btn1"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="1"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply1_cb_red_content_description"
+            android:onClick="clickPly1_Button"
+            android:scaleType="fitCenter"
+            android:tag="p1_red"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_red_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply1_btn2"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="2"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply1_cb_orange_content_description"
+            android:onClick="clickPly1_Button"
+            android:scaleType="fitCenter"
+            android:tag="p1_orange"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_orange_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply1_btn3"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="1"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply1_cb_yellow_content_description"
+            android:onClick="clickPly1_Button"
+            android:scaleType="fitCenter"
+            android:tag="p1_yellow"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_yellow_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply1_btn4"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="2"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply1_cb_green_content_description"
+            android:onClick="clickPly1_Button"
+            android:scaleType="fitCenter"
+            android:tag="p1_green"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_green_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply1_btn5"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="2"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="2"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply1_cb_blue_content_description"
+            android:onClick="clickPly1_Button"
+            android:scaleType="fitCenter"
+            android:tag="p1_blue"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_blue_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply1_btn6"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="2"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply1_cb_purple_content_description"
+            android:onClick="clickPly1_Button"
+            android:scaleType="fitCenter"
+            android:tag="p1_purple"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_purple_btn_effect" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/ply2_btn_place"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/mc_ply_btn_place_top_margin"
+        android:background="@color/mc_ply2_btn_place_background"
+        android:paddingBottom="@dimen/mc_ply_btn_place_vertical_padding"
+        android:paddingLeft="@dimen/mc_ply_btn_place_horizontal_padding"
+        android:paddingRight="@dimen/mc_ply_btn_place_horizontal_padding"
+        android:paddingTop="@dimen/mc_ply_btn_place_vertical_padding">
+
+        <ImageButton
+            android:id="@+id/ply2_btn1"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="2"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply2_cb_red_content_description"
+            android:onClick="clickPly2_Button"
+            android:scaleType="fitCenter"
+            android:tag="p2_red"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_red_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply2_btn2"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="2"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="2"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply2_cb_orange_content_description"
+            android:onClick="clickPly2_Button"
+            android:scaleType="fitCenter"
+            android:tag="p2_orange"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_orange_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply2_btn3"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="2"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply2_cb_yellow_content_description"
+            android:onClick="clickPly2_Button"
+            android:scaleType="fitCenter"
+            android:tag="p2_yellow"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_yellow_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply2_btn4"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="1"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply2_cb_green_content_description"
+            android:onClick="clickPly2_Button"
+            android:scaleType="fitCenter"
+            android:tag="p2_green"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_green_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply2_btn5"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="2"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply2_cb_blue_content_description"
+            android:onClick="clickPly2_Button"
+            android:scaleType="fitCenter"
+            android:tag="p2_blue"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_blue_btn_effect" />
+
+        <ImageButton
+            android:id="@+id/ply2_btn6"
+            android:layout_width="@dimen/mc_circle_btn_size"
+            android:layout_height="@dimen/mc_circle_btn_size"
+            android:layout_column="1"
+            android:layout_margin="@dimen/mc_circle_button_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/mc_ply2_cb_purple_content_description"
+            android:onClick="clickPly2_Button"
+            android:scaleType="fitCenter"
+            android:tag="p2_purple"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/circle_purple_btn_effect" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/record_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/mc_record_view_vertical_margin"
+        android:layout_marginLeft="@dimen/mc_record_view_horizontal_margin"
+        android:layout_marginRight="@dimen/mc_record_view_horizontal_margin"
+        android:layout_marginTop="@dimen/mc_record_view_vertical_margin"
+        android:background="@color/mc_record_place_background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mc_record_view_vertical_padding"
+        android:paddingLeft="@dimen/mc_record_view_horizontal_padding"
+        android:paddingRight="@dimen/mc_record_view_horizontal_padding"
+        android:paddingTop="@dimen/mc_record_view_vertical_padding">
+
+        <TextView
+            android:id="@+id/record1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/middle_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_middle_line"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_ml_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/middle_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_middle_line"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_ml_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/record3_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc_record_name_null"
+            android:textAlignment="center"
+            android:textSize="@dimen/mc_record_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ply1_mark"
+        android:layout_width="@dimen/mc_ply_score_horizontal_size"
+        android:layout_height="@dimen/mc_ply_score_vertical_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/mc_ply1_mark_background"
+        android:text="@string/mc_ply1_default_score"
+        android:textAlignment="center"
+        android:textSize="@dimen/mc_ply_score_text_size" />
+
+    <TextView
+        android:id="@+id/time_300s"
+        android:layout_width="@dimen/mc_time_horizontal_size"
+        android:layout_height="@dimen/mc_time_vertical_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/mc_time_300s_background"
+        android:text="@string/mc_default_time_300s"
+        android:textAlignment="center"
+        android:textSize="@dimen/mc_time_text_size" />
+
+    <TextView
+        android:id="@+id/ply2_mark"
+        android:layout_width="@dimen/mc_ply_score_horizontal_size"
+        android:layout_height="@dimen/mc_ply_score_vertical_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/mc_ply2_mark_background"
+        android:text="@string/mc_ply2_default_score"
+        android:textAlignment="center"
+        android:textSize="@dimen/mc_ply_score_text_size" />
+
+    <ImageView
+        android:id="@+id/ply1_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/rounds"
+        android:contentDescription="@string/mc_ply1_round_content_description"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/arrow_right" />
+
+    <TextView
+        android:id="@+id/rounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/mc_rounds_view_vertical_padding"
+        android:paddingLeft="@dimen/mc_rounds_view_horizontal_padding"
+        android:paddingRight="@dimen/mc_rounds_view_horizontal_padding"
+        android:paddingTop="@dimen/mc_rounds_view_vertical_padding"
+        android:text="@string/mc_rounds_default"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ply2_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/rounds"
+        android:contentDescription="@string/mc_ply1_round_content_description"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <TextView
+        android:id="@+id/mc_ui_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mc_color_ui_background"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/prepare_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/mc_ui_pt_text"
+        android:textSize="@dimen/mc_ui_pt_text_size"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/mc_ui_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mc_ui_place_horizontal_padding"
+        android:paddingRight="@dimen/mc_ui_place_horizontal_padding"
+        tools:ignore="RelativeOverlap">
+
+        <TextView
+            android:id="@+id/mc_ui_gametitle_winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/mc_ui_element_margin"
+            android:fontFamily="serif"
+            android:text="@string/mc_ui_gametitle_default"
+            android:textAlignment="center"
+            android:textColor="@color/mc_ui_gametitle_winner_text_color"
+            android:textSize="@dimen/mc_ui_gametitle_winner_text_size"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/mc_ui_gamestart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/mc_ui_element_margin"
+            android:background="@color/mc_ui_sb_background"
+            android:onClick="clickStartButton"
+            android:paddingBottom="@dimen/mc_ui_gs_btn_vertical_padding"
+            android:paddingLeft="@dimen/mc_ui_gs_btn_horizontal_padding"
+            android:paddingRight="@dimen/mc_ui_gs_btn_horizontal_padding"
+            android:paddingTop="@dimen/mc_ui_gs_btn_vertical_padding"
+            android:text="@string/mc_ui_sb_text"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

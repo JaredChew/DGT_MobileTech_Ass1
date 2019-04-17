@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="ng_color_main_background">#B1BCF7</color>
+    <color name="ng_color_background_design_top">#bb53605C</color>
+    <color name="ng_color_background_design_middle">#bb61AD92</color>
+    <color name="ng_color_background_design_bottom">#887EE0BD</color>
+    <color name="ng_color_select_board">#df3D5BA6</color>
+    <color name="ng_player1_mark_text">#C78626</color>
+    <color name="ng_time_color">#CC3683</color>
+    <color name="ng_btn_p1_color">#E8D086</color>
+    <color name="ng_btn_p2_color">#82DFE0</color>
+    <color name="ng_ui_background">#a7242424</color>
+    <color name="ng_ui_title_color">#ffffff</color>
+    <color name="ng_ui_gamestart_btn_color">#E87966</color>
+
+
+    <color name="mc_color_main_background">#cc2AA5E8</color>
+    <color name="mc_ply1_btn_place_background">#E8A532</color>
+    <color name="mc_ply2_btn_place_background">#9CC240</color>
+
+    <color name="mc_record_place_background">#5f3BEDFF</color>
+    <color name="mc_ply1_mark_background">#E87332</color>
+    <color name="mc_time_300s_background">#2AA5E8</color>
+    <color name="mc_ply2_mark_background">#E8DB3B</color>
+    <color name="mc_color_ui_background">#a7242424</color>
+    <color name="mc_ui_gametitle_winner_text_color">#ffffff</color>
+
+    <color name="mc_ui_sb_background">#E87966</color>
+</resources>

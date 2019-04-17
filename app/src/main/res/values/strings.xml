@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+
+    <string name="title_mainMenu">Unlimited Liberation</string>
+    <string name="ticTacToe_switch">Tic Tac Toe</string>
+    <string name="numberGuessing_switch">Number Guessing</string>
+    <string name="memoryChallenge_switch">Memory Challenge</string>
+    <string name="highscore_switch">Highscore</string>
+    <string name="exit">Exit</string>
+
+    <string name="player1">Player 1 Score</string>
+    <string name="player2">Player 2 Score</string>
+    <string name="time">Time</string>
+    <string name="score_default">0</string>
+    <string name="ok_button">ok</string>
+    <string name="cancel_button">cancel</string>
+    <string name="playAgain_default">Play Again</string>
+    <string name="winLose_default">Draw</string>
+
+    <string name="num1_ng">0</string>
+    <string name="num2_ng">0</string>
+    <string name="num3_ng">0</string>
+    <string name="num4_ng">0</string>
+    <string name="buttonUp_desc">Increase number</string>
+    <string name="buttonDown_desc">Decrease number</string>
+
+
+    <string name="ng_time_text">99</string>
+    <string name="ng_gamestart_btn_text">Start</string>
+    <string name="ng_play_agian_btn_text">Play Again</string>
+    <string name="ng_gametitle_text">Number Guessing</string>
+    <string name="ng_ply1_round_content_description">ply1Round</string>
+    <string name="ng_ply2_round_content_description">ply2Round</string>
+
+
+
+    <string name="mc_record_name_null">--</string>
+    <string name="mc_middle_line">-------------</string>
+
+    <string name="mc_ply1_default_score">Score :  0   </string>
+    <string name="mc_ply2_default_score">Score :  0   </string>
+    <string name="mc_default_time_300s">Time :  300</string>
+    <string name="mc_rounds_default">Round :  1</string>
+
+    <string name="mc_ui_gametitle_default">Memory Challenge</string>
+
+    <string name="mc_ui_sb_text">Start</string>
+
+    <string name="mc_ui_pt_text">3</string>
+
+    <string name="mc_ply1_round_content_description">player_1_rounds</string>
+    <string name="mc_ply2_round_content_description">player_2_rounds</string>
+
+    <!--Player 1 circle button content description-->
+    <string name="mc_ply1_cb_red_content_description">Button_Red</string>
+    <string name="mc_ply1_cb_orange_content_description">Button_Orange</string>
+    <string name="mc_ply1_cb_yellow_content_description">Button_Yellow</string>
+    <string name="mc_ply1_cb_green_content_description">Button_Green</string>
+    <string name="mc_ply1_cb_blue_content_description">Button_Blue</string>
+    <string name="mc_ply1_cb_purple_content_description">Button_Purple</string>
+    <!--Player 2 circle button content description-->
+    <string name="mc_ply2_cb_red_content_description">Button_Red</string>
+    <string name="mc_ply2_cb_orange_content_description">Button_Orange</string>
+    <string name="mc_ply2_cb_yellow_content_description">Button_Yellow</string>
+    <string name="mc_ply2_cb_green_content_description">Button_Green</string>
+    <string name="mc_ply2_cb_blue_content_description">Button_Blue</string>
+    <string name="mc_ply2_cb_purple_content_description">Button_Purple</string>
+
+</resources>

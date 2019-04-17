@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#2B4660"
+    tools:context="com.example.student.assignment1.MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#eeAAC8E5">
+
+        android:columnCount="3"
+        android:rowCount="3"
+
+
+        <ImageButton
+            android:id="@+id/x1y1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="0"
+            app:srcCompat="@drawable/x1y1" />
+
+        <ImageButton
+            android:id="@+id/x2y1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="1"
+            app:srcCompat="@drawable/x2y1" />
+
+        <ImageButton
+            android:id="@+id/x3y1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="2"
+            app:srcCompat="@drawable/x3y1" />
+
+        <ImageButton
+            android:id="@+id/x1y2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:paddingLeft="0dp"
+            android:scaleType="fitXY"
+            android:tag="3"
+            app:srcCompat="@drawable/x1y2" />
+
+        <ImageButton
+            android:id="@+id/x2y2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="4"
+            app:srcCompat="@drawable/x2y2" />
+
+        <ImageButton
+            android:id="@+id/x3y2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="5"
+            app:srcCompat="@drawable/x3y2" />
+
+        <ImageButton
+            android:id="@+id/x1y3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="6"
+            app:srcCompat="@drawable/x1y3" />
+
+        <ImageButton
+            android:id="@+id/x2y3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="7"
+            app:srcCompat="@drawable/x2y3" />
+
+        <ImageButton
+            android:id="@+id/x3y3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@null"
+            android:onClick="playerTurn"
+            android:scaleType="fitXY"
+            android:tag="8"
+            app:srcCompat="@drawable/x3y3" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/player1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc63A3E0"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Player 1 Wins: 0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/player2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc63A3E0"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Player 2 Wins: 0"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/winlose_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/winLoseDraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/mc_ui_gametitle_winner_text_color"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="againButton"
+            android:paddingBottom="@dimen/ng_ui_size_vertical_padding"
+            android:paddingLeft="@dimen/ng_ui_size_horizontal_padding"
+            android:paddingRight="@dimen/ng_ui_size_horizontal_padding"
+            android:paddingTop="@dimen/ng_ui_size_vertical_padding"
+            android:text="@string/playAgain_default"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

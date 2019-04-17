@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/ng_color_main_background"
+    tools:context="com.example.student.assignment1.MemoryChallenge">
+
+    <TextView
+        android:id="@+id/background_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/ng_color_background_design_top"
+        android:paddingBottom="@dimen/ng_background_design_top_padding" />
+
+    <TextView
+        android:id="@+id/background_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/ng_color_background_design_middle"
+        android:paddingBottom="@dimen/ng_background_design_middle_padding" />
+
+    <TextView
+        android:id="@+id/background_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ng_color_background_design_bottom"
+        android:paddingBottom="@dimen/ng_background_design_bottom_padding" />
+
+    <GridLayout
+        android:id="@+id/select_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/ng_color_select_board"
+        android:paddingBottom="@dimen/ng_select_board_vertical_padding"
+        android:paddingLeft="@dimen/ng_select_board_horizontal_padding"
+        android:paddingRight="@dimen/ng_select_board_horizontal_padding"
+        android:paddingTop="@dimen/ng_select_board_vertical_padding">
+
+        <ImageButton
+            android:id="@+id/upBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/buttonUp_desc"
+            android:onClick="increase_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num1"
+            app:srcCompat="@drawable/arrow_up" />
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="2"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:text="@string/num1_ng"
+            android:textSize="@dimen/ng_num1_text_size" />
+
+        <ImageButton
+            android:id="@+id/downBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/buttonDown_desc"
+            android:onClick="decrease_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num1"
+            app:srcCompat="@drawable/arrow_down" />
+
+        <ImageButton
+            android:id="@+id/upBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/buttonUp_desc"
+            android:onClick="increase_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num2"
+            app:srcCompat="@drawable/arrow_up" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="2"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:text="@string/num2_ng"
+            android:textSize="@dimen/ng_num1_text_size" />
+
+        <ImageButton
+            android:id="@+id/downBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/buttonDown_desc"
+            android:onClick="decrease_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num2"
+            app:srcCompat="@drawable/arrow_down" />
+
+        <ImageButton
+            android:id="@+id/upBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/buttonUp_desc"
+            android:onClick="increase_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num3"
+            app:srcCompat="@drawable/arrow_up" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="2"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:text="@string/num3_ng"
+            android:textSize="@dimen/ng_num1_text_size" />
+
+        <ImageButton
+            android:id="@+id/downBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/buttonDown_desc"
+            android:onClick="decrease_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num3"
+            app:srcCompat="@drawable/arrow_down" />
+
+        <ImageButton
+            android:id="@+id/upBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/buttonUp_desc"
+            android:onClick="increase_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num4"
+            app:srcCompat="@drawable/arrow_up" />
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="2"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:text="@string/num4_ng"
+            android:textSize="@dimen/ng_num1_text_size" />
+
+        <ImageButton
+            android:id="@+id/downBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_marginBottom="@dimen/ng_sb_element_vertical_margin"
+            android:layout_marginLeft="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginRight="@dimen/ng_sb_element_horizontal_margin"
+            android:layout_marginTop="@dimen/ng_sb_element_vertical_margin"
+            android:layout_row="3"
+            android:background="@null"
+            android:contentDescription="@string/buttonDown_desc"
+            android:onClick="decrease_button"
+            android:padding="@dimen/ng_sb_element_padding"
+            android:tag="num4"
+            app:srcCompat="@drawable/arrow_down" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/ng_player1_mark_text"
+        android:paddingBottom="@dimen/ng_player1_mark_padding_bottom"
+        android:paddingLeft="@dimen/ng_player1_mark_horizontal_padding"
+        android:paddingRight="@dimen/ng_player1_mark_horizontal_padding"
+        android:paddingTop="@dimen/ng_player1_mark_padding_top"
+        android:text="@string/player1"
+        android:textSize="@dimen/ng_player1_mark_text_size" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#5375E0"
+        android:paddingBottom="50dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:text="@string/player2"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/p1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/ng_player1_left_and_player_right_margin"
+        android:layout_marginTop="@dimen/ng_player1_and_player_top_margin"
+        android:text="@string/score_default"
+        android:textSize="@dimen/ng_ps_text_size"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/p2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/ng_player1_left_and_player_right_margin"
+        android:layout_marginTop="@dimen/ng_player1_and_player_top_margin"
+        android:text="@string/score_default"
+        android:textSize="@dimen/ng_ps_text_size"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/ng_time_color"
+        android:paddingBottom="@dimen/ng_time_vertical_padding"
+        android:paddingLeft="@dimen/ng_time_horizontal_padding"
+        android:paddingRight="@dimen/ng_time_horizontal_padding"
+        android:paddingTop="@dimen/ng_time_vertical_padding"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textSize="@dimen/ng_time_text_size"
+        tools:text="@string/ng_time_text" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="playAgain"
+        android:text="@string/ng_play_agian_btn_text"
+        android:visibility="invisible"
+        tools:text="Play Again" />
+
+    <Button
+        android:id="@+id/okBtn_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/ng_btn_p1_and_p2_margin_bottom"
+        android:layout_marginLeft="@dimen/ng_btn_p1_left_and_p2_right_margin"
+        android:background="@color/ng_btn_p1_color"
+        android:onClick="game"
+        android:paddingBottom="@dimen/ng_btn_p1_and_p2_vertical_padding"
+        android:paddingLeft="@dimen/ng_btn_p1_and_p2_horizontal_padding"
+        android:paddingRight="@dimen/ng_btn_p1_and_p2_horizontal_padding"
+        android:paddingTop="@dimen/ng_btn_p1_and_p2_vertical_padding"
+        android:tag="p1"
+        android:text="@string/ok_button"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/okBtn_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/ng_btn_p1_and_p2_margin_bottom"
+        android:layout_marginRight="@dimen/ng_btn_p1_left_and_p2_right_margin"
+        android:background="@color/ng_btn_p2_color"
+        android:onClick="game"
+        android:paddingBottom="@dimen/ng_btn_p1_and_p2_vertical_padding"
+        android:paddingLeft="@dimen/ng_btn_p1_and_p2_horizontal_padding"
+        android:paddingRight="@dimen/ng_btn_p1_and_p2_horizontal_padding"
+        android:paddingTop="@dimen/ng_btn_p1_and_p2_vertical_padding"
+        android:tag="p2"
+        android:text="@string/ok_button"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/winLoseDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@color/mc_ui_gametitle_winner_text_color"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        tools:text="@string/winLose_default" />
+
+</RelativeLayout>
